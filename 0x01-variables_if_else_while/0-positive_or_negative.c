@@ -7,6 +7,7 @@
  * shows whether the number negative or positiveor zero
  * Return: Always 0 (Success)
 */
+
 int main(void)
 {
 	int n;
