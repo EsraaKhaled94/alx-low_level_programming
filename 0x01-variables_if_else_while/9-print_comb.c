@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * prints numbers from 0 to 9
+ * prints numbers from 0 to 9 seprated by commas
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -12,7 +12,8 @@ int main(void)
 	for (number = 0; number < 10 ; number++)
 	{
 		putchar(number + '0');
-		if (number != 9){
+		if (number != 9)
+		{
 			putchar(',');
 			putchar(' ');
 		}
