@@ -16,7 +16,7 @@ int main(void)
 
 	for(number = 0; number < 6; number++)
 	{
-		putchar(number + 'a')
+		putchar(number + 'a');
 	}
 
 	putchar('\n');
