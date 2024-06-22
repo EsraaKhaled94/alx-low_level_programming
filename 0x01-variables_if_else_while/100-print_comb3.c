@@ -15,13 +15,16 @@ int main(void)
 		{
 			putchar(tenth + '0');
 			putchar(units + '0');
-			if (tenth != 8 && units != 9)
+			if (tenth == 8 && units == 9)
+			{
+				putchar('\n');
+			}
+			else
 			{
 				putchar(',');
 				putchar(' ');
 			}
 		}
 	}
-	putchar('\n');
 	return (0);
 }
