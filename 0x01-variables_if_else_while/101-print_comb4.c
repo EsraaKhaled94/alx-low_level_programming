@@ -11,7 +11,7 @@ int main(void)
 
 	for (hundreds = 0; hundreds < 8; hundreds++)
 	{
-		for (tenth = hundreds+1; tenth < 9 ; tenth++)
+		for (tenth = hundreds + 1; tenth < 9 ; tenth++)
 		{
 			for (units = tenth + 1; units < 10 ; units++)
 			{
