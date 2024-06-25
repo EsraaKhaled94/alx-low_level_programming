@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet - Prints the alphabet 10 times in lowercase, 
+ * print_alphabet - Prints the alphabet 10 times in lowercase,
  * followed by a new line.
  *
  * Description: This function uses a loop to iterate through the lowercase
@@ -14,12 +14,12 @@ void print_alphabet_x10(void)
 	int i;
 	char letter;
 
-	for (i = 0;i < 10;i++)
+	for (i = 0; i < 10; i++)
 	{
 		for (letter = 'a'; letter <= 'z'; letter++)
 		{
 			_putchar(letter);
-		}	
+		}
 		_putchar('\n');
 	}
 }
