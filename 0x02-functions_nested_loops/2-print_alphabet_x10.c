@@ -6,7 +6,7 @@
  *
  * Description: This function uses a loop to iterate 10 times then there's
  * internal loop through the lowercase letters of the alphabet from 'a' to 'z'
- * and prints each character using the _putchar function. 
+ * and prints each character using the _putchar function.
  * After printing all the letters, it prints a newline character.
  */
 void print_alphabet_x10(void)
