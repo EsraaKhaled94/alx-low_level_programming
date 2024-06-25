@@ -6,7 +6,8 @@
  * print _putchar
  * Return: Always 0 (Success)
  */
-int main(void){
+int main(void)
+{
 	char myString[] = "_putchar";
 	int i;
 
