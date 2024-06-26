@@ -17,7 +17,7 @@ int main(void)
 	for (i = 2; i < 98; i++)
 	{
 		following = fib1 + fib2;
-		printf(", %u", following);
+		printf(", %lu", following);
 		fib1 = fib2;
 		fib2 = following;
 	}
