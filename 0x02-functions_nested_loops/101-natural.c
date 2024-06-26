@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 /**
- * sum_multiples - Computes and prints the sum of
- * all multiples of 3 or 5 below 1024.
+ * main - Entry point
  *
- * Description: iterates through all natural numbers below 1024
+ * iterates through all natural numbers below 1024
  * and sums up those that are multiples of either 3 or 5. The result is then
  * returned.
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
