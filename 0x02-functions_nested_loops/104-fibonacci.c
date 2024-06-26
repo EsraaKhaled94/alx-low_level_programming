@@ -14,7 +14,7 @@ int main(void)
 	unsigned long fib1 = 1, fib2 = 2, following;
 
 	printf("%lu, %lu", fib1, fib2);
-	for (i = 0; i < 96; i++)
+	for (i = 0; i < 98; i++)
 	{
 		following = fib1 + fib2;
 		printf(", %lu", following);
