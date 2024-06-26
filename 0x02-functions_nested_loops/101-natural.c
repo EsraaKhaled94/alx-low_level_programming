@@ -3,6 +3,10 @@
 /**
  * sum_multiples - Computes and prints the sum of
  * all multiples of 3 or 5 below 1024.
+ *
+ * Description: iterates through all natural numbers below 1024
+ * and sums up those that are multiples of either 3 or 5. The result is then
+ * returned.
  */
 
 int main(void)
@@ -17,6 +21,6 @@ int main(void)
 			sum += number;
 		}
 	}
-	printf("%d", sum);
+	printf("%d\n", sum);
 	return (0);
 }
