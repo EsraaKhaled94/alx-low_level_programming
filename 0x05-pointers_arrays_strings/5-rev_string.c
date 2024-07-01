@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * rev_string - Reverses a string in place.
+ * @s: Pointer to the string to be reversed
+ *
+ * This function takes a pointer to a string as its parameter
+ * and reverses the string in place.
+ */
+
 void rev_string(char *s)
 {
 	int length = 0;
@@ -15,6 +23,6 @@ void rev_string(char *s)
 	{
 		temp = s[i];
 		s[i] = s[length - 1 - i];
-		s[length - 1 - i] = temp;
+		s[length - 1 - i] = ktemp;
 	}
 }
