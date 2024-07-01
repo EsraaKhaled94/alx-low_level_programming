@@ -9,16 +9,40 @@
 
 int _atoi(char *s)
 {
-	int i = 1;
-	unsigned int num = 0;
+	int sign = 1;
+	int num = 0;
+	int started = 0
 
-	do {
-		if (*s == '-')
-			i *= -1;
-		else if (*s >= '0' && *s <= '9')
-			num = num * 10 + (*s - '0');
-		else if (num > 0)
-			break;
-	} while (*s++);
-	return (num *i);
+	while (*s == ' ' || *s == '\t')
+		s++;
+
+	if (*s == '-')
+	{
+		sign = -1;
+		s++;
+	}
+	else if (*s == '+')
+	{
+		s++;
+	}
+
+	while (*s >= '0' && *s <= '9')
+	{
+		started = 1; // Set flag that we are parsing digits
+		int digit = *s - '0';
+
+		// Check for integer overflow before adding new digit
+		if (num > (INT_MAX - digit) / 10)
+		{
+			// Handle overflow by returning closest limit
+			return (sign == 1) ? INT_MAX : INT_MIN;
+		}
+
+		num = num * 10 + digit;
+		s++;
+	}
+       	// If no digits were parsed, return 0 as per requirements  if (!started)
+        return 0;
+
+	return num * sign;
 }
