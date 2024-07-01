@@ -19,13 +19,13 @@ void puts_half(char *str)
 		length++;
 	}
 
-	if (length % 2 ==0)
+	if (length % 2 == 0)
 	{
 		half_count = length / 2;
 	}
 	else
 	{
-		half_count = (length - 1) / 2;
+		half_count = (length + 1) / 2;
 	}
 
 	for (index = half_count; index < length; index++)
