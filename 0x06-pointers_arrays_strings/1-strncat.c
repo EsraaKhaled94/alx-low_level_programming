@@ -8,7 +8,7 @@
  * using at most n bytes from src. The src string does not need to be
  * null-terminated if it contains n or more bytes. The resulting string
  * in dest will always be null-terminated.
- * 
+ *
  * Return: A pointer to the resulting string dest
  */
 
