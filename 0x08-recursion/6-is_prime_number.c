@@ -12,7 +12,7 @@ int check_if_prime(int a, int b)
 	else if (a > b / 2)
 		return (1);
 	else
-		return (check(a + 1, b));
+		return (check_if_prime(a + 1, b));
 }
 
 /**
