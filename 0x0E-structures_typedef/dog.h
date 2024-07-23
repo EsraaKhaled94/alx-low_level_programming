@@ -17,7 +17,7 @@ struct dog
 	float age;
 	char *owner;
 };
-// answer to Define a new type dog_t as a new name for the type struct dog.
+/*answer to Define a new type dog_t as a new name for the type struct dog.*/
 typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
